@@ -1,0 +1,78 @@
+body {
+  background-color: #efefef;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  z-index: 999;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color: black;
+}
+
+#about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -150px;
+  max-width: 100%;
+  width: 800px;
+}
+
+.description {
+  margin-top: 200px;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #dc3545;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
